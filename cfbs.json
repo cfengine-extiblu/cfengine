@@ -158,6 +158,22 @@
         "copy ./inventory-cfengine-version-support-status.cf services/cfengine-supported/",
         "json ./cfbs/def.json def.json"
       ]
+    },
+    {
+      "name": "inventory-physical-memory",
+      "version": "0.0.3",
+      "description": "Inventory information about physical memory.",
+      "tags": ["inventory"],
+      "repo": "https://github.com/nickanderson/cfengine-inventory-physical-memory",
+      "by": "https://github.com/nickanderson/",
+      "commit": "e26f77fdc0f5d83d290180c73d7feeed45051358",
+      "subdirectory": "",
+      "added_by": "cfbs add",
+      "steps": [
+        "copy ./policy/main.cf services/cfbs/inventory-physical-memory/main.cf",
+        "policy_files services/cfbs/inventory-physical-memory/main.cf",
+        "bundles inventory_physical_memory:main"
+      ]
     }
   ],
   "git": true
