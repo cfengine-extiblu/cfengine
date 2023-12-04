@@ -131,6 +131,18 @@
       "subdirectory": "management/autorun",
       "added_by": "cfbs add",
       "steps": ["json def.json def.json"]
+    },
+    {
+      "name": "allow-all-hosts",
+      "version": "0.0.1",
+      "description": "Allows all hosts / IP addresses to connect and fetch policy.",
+      "tags": ["management", "experimental"],
+      "repo": "https://github.com/cfengine/modules",
+      "by": "https://github.com/olehermanse",
+      "commit": "85f9aec38783b5a4dac4777ffa9d17fde5054d14",
+      "subdirectory": "management/allow-all-hosts",
+      "added_by": "cfbs add",
+      "steps": ["json def.json def.json"]
     }
   ],
   "git": true
