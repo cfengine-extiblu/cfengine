@@ -119,6 +119,18 @@
         "copy ./policy/main.cf services/inventory-sudoers/main.cf",
         "json ./cfbs/def.json def.json"
       ]
+    },
+    {
+      "name": "autorun",
+      "version": "1.0.1",
+      "description": "Enables autorun functionality.",
+      "tags": ["supported", "management"],
+      "repo": "https://github.com/cfengine/modules",
+      "by": "https://github.com/olehermanse",
+      "commit": "c3b7329b240cf7ad062a0a64ee8b607af2cb912a",
+      "subdirectory": "management/autorun",
+      "added_by": "cfbs add",
+      "steps": ["json def.json def.json"]
     }
   ],
   "git": true
